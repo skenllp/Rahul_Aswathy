@@ -226,7 +226,7 @@ img.section-bg{
   justify-self:center;
   align-self:end;
   margin-bottom:clamp(0px, 2%, 8px);
-  transform:translateY(-8px);
+  transform:translateY(-58px);
   opacity:0;
   transition:opacity .6s ease .3s;
 }
