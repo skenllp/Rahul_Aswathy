@@ -225,7 +225,8 @@ img.section-bg{
   z-index:3;
   justify-self:center;
   align-self:end;
-  margin-bottom:clamp(10px, 8%, 20px);
+  margin-bottom:clamp(0px, 2%, 8px);
+  transform:translateY(-8px);
   opacity:0;
   transition:opacity .6s ease .3s;
 }

@@ -1200,6 +1200,10 @@ body.finale-particles .finale-fallback{opacity:0}
 @media (max-width:420px){
   .countdown{gap:6px}
   .cd-unit{min-width:56px}
+  .scene--screen > .scroll-indicator{
+    margin-bottom:0;
+    transform:translateY(-10px);
+  }
 }
 @media (min-width:900px){
   .couple-grid{grid-template-columns:1fr auto 1fr;align-items:center}
