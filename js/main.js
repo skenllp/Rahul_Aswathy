@@ -699,7 +699,8 @@
     var t = document.querySelector(id);
     if (!t) return;
     e.preventDefault();
-    t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    var targetTop = t.getBoundingClientRect().top + window.scrollY - 20;
+    window.scrollTo({ top: targetTop, behavior: 'smooth' });
   });
 
 })();
