@@ -699,7 +699,9 @@
     var t = document.querySelector(id);
     if (!t) return;
     e.preventDefault();
-    var targetTop = t.getBoundingClientRect().top + window.scrollY - 20;
+    var largePhone = window.matchMedia && window.matchMedia('(min-width: 430px) and (max-width: 500px)').matches;
+    var scrollOffset = largePhone ? 10 : 20;
+    var targetTop = t.getBoundingClientRect().top + window.scrollY - scrollOffset;
     window.scrollTo({ top: targetTop, behavior: 'smooth' });
   });
 
